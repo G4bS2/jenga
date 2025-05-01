@@ -284,6 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340020163}
+  - component: {fileID: 340020164}
   m_Layer: 0
   m_Name: JenkaManager
   m_TagString: Untagged
@@ -306,6 +307,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340020164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340020162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75795ceeb158871489cf6f59acc7fc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers: 3
+  piecePerLayer: 3
+  piecePrefabs: []
+  pieceSpacing: 0
+  pieceLength: 0.5
+  pieceHeitgh: 0.5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,117 +446,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1001 &443941016
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.4381976
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.041132927
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1629657039557386920, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2470177083439299855, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      propertyPath: m_Name
-      value: jenka piece blue
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2470177083439299855, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 952087544}
-    - targetCorrespondingSourceObject: {fileID: 2470177083439299855, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 952087543}
-  m_SourcePrefab: {fileID: 100100000, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
---- !u!1 &952087542 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2470177083439299855, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
-  m_PrefabInstance: {fileID: 443941016}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &952087543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952087542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d942ceabacc856469d9a627a81aad59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDragDistance: 2
-  pushForce: 5
-  doubleClickForceMultiplier: 2
-  doubleClickThreshold: 0.3
---- !u!54 &952087544
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952087542}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1713206683
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,5 +562,4 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 1713206687}
-  - {fileID: 443941016}
   - {fileID: 340020163}
