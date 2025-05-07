@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8684944649362456510}
   - component: {fileID: 239575606066023232}
   - component: {fileID: 6479406396121820874}
+  - component: {fileID: -2256926247177955105}
   m_Layer: 0
   m_Name: jenka piece blue
   m_TagString: Untagged
@@ -95,7 +96,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2470177083439299855}
-  m_Material: {fileID: 13400000, guid: e69bbb1279e25054199ec440bd9ea856, type: 2}
+  m_Material: {fileID: 13400000, guid: d926ffd352daa4f43a250b4ec12144fe, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -136,3 +137,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2256926247177955105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470177083439299855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d942ceabacc856469d9a627a81aad59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDragDistance: 2
+  pushForce: 5
+  doubleClickForceMultiplier: 2
+  doubleClickThreshold: 0.3
