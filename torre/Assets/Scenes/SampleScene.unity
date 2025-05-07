@@ -321,10 +321,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers: 3
   piecePerLayer: 3
-  piecePrefabs: []
+  piecePrefabs:
+  - {fileID: 4446711131951057472, guid: 152a4a862a608264e8bc07bc1322ec22, type: 3}
+  - {fileID: 2470177083439299855, guid: 3dc8e09a3ce4f1e4b8affae3392eba4c, type: 3}
   pieceSpacing: 0
   pieceLength: 0.5
-  pieceHeitgh: 0.5
+  pieceHeigth: 0.5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +551,7 @@ Transform:
   m_GameObject: {fileID: 1713206683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.44, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

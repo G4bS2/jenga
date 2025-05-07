@@ -13,7 +13,7 @@ public class JenkaManager : MonoBehaviour
     [Header("Piece Size Settings")]
     public float pieceSpacing = 0f;
     public float pieceLength = 0.5f;
-    public float pieceHeitgh = 0.5f;
+    public float pieceHeigth = 0.5f;
 
 
     private void Start()
@@ -32,7 +32,7 @@ public class JenkaManager : MonoBehaviour
     void GenerateLayer(int layerIndex)
     {
         Vector3 basePosition = transform.position;
-        basePosition.y += layerIndex * (pieceHeitgh + pieceSpacing);
+        basePosition.y += layerIndex * (pieceHeigth + pieceSpacing);
 
         bool isOdd = IsOddLayer(layerIndex);
         Quaternion rotation = isOdd ? Quaternion.Euler(0, 90, 0) : Quaternion.identity;
@@ -41,6 +41,14 @@ public class JenkaManager : MonoBehaviour
         float totalWidth = (piecePerLayer - 1) * (pieceLength + pieceSpacing);
         Vector3 startOffset = -direction * (totalWidth / 2f);
 
+        for (int i = 0; i < piecePerLayer; i++)
+        {
+            GameObject prefab = piecePrefabs[Random.Range(0, piecePrefabs.Count)];
+            Vector3 offset = direction * i * (pieceLength + pieceSpacing);
+            Vector3 spawnPosition = basePosition + startOffset + offset;
+
+            Instantiate(prefab, spawnPosition, rotation);
+        }
     }
 
     bool IsOddLayer(int layerIndex)
